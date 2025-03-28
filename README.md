@@ -2,7 +2,7 @@
 一个极简的 Typecho 插件，用于在新建文章时自动填写随机 Slug。
 
 ## 原理
-当插件被激活时，`AutoSlug_Plugin::activate` 方法被调用，插件通过 `Typecho_Plugin::factory` 将一个 JavaScript 脚本注入到文章编辑页面的底部，  
+当插件被激活时，`AutoSlug_Plugin::activate` 方法被调用，插件通过 `Typecho_Plugin::factory` 将一个 JavaScript 脚本注入到文章编辑页面的底部。
 
 ## 安装
 这个插件本身非常简单，  
