@@ -1,5 +1,6 @@
 # Typecho-AutoSlug
-一个极简的 Typecho 插件，用于在新建文章时自动填写随机 Slug。
+一个极简的 Typecho 插件，用于在新建文章时自动填写随机 Slug，  
+使用无意义的 Slug 似乎会对 SEO 有负面影响，请注意。
 
 ## 原理
 当插件被激活时，`AutoSlug_Plugin::activate` 方法被调用，插件通过 `Typecho_Plugin::factory` 将一个 JavaScript 脚本注入到文章编辑页面的底部。
