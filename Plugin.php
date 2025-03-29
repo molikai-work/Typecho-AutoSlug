@@ -1,6 +1,6 @@
 <?php
 /**
- *  新建文章时自动生成随机 Slug
+ * 新建文章时自动生成随机 Slug
  * 
  * @package AutoSlug
  * @author molikai-work
@@ -28,7 +28,7 @@ class AutoSlug_Plugin implements Typecho_Plugin_Interface {
             _t('随机 Slug 长度'),
             _t('设置生成的随机 Slug 的长度')
         );
-        $form->addInput($length->addRule('isInteger', _t('长度必须是整数'))->addRule('min', _t('长度必须大于 1'), 1));
+        $form->addInput($length->addRule('isInteger', _t('长度必须是整数'))->addRule('min', _t('长度必须大于 0'), 1));
 
         $pages = new Typecho_Widget_Helper_Form_Element_Checkbox(
             'inject_pages',
